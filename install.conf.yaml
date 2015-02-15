@@ -1,3 +1,4 @@
 - clean: []
-- link: {}
+- link:
+    ~/.bash_profile: bash/bash_profile
 - shell: []
