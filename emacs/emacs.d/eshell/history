@@ -1,0 +1,21 @@
+owd
+pwd
+cd env-builds-vagrant/
+git branch
+git stats
+statusexit
+exit
+pwd
+s
+ls
+cd env-builds/
+ls
+cd ops/roles/riemann-airos/../jenkins-devops/
+ls
+git status
+vagrant up
+ansible-examples     env-builds-vagrant  riemann.log  
+cd env-builds/ops/roles/jenkins-devops/
+vagrant up
+vagrant destroy
+vagrant up

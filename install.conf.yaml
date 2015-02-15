@@ -2,4 +2,6 @@
 - link:
     ~/.bash_profile: bash/bash_profile
     ~/.gitconfig: git/gitconfig.symlink
+    ~/.emacs: emacs/emacs
+    ~/.emacs.d: emacs/emacs.d
 - shell: []

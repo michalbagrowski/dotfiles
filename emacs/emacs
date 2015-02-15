@@ -1,0 +1,30 @@
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+  '(mac-option-modifier (quote meta)))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+(setq require-final-newline t)
+(setq inhibit-splash-screen t)
+
+(add-to-list 'load-path "/Users/acid/Projects/tools/magit-1.2.1/contrib/magit")
+(require 'magit)
+
+
+(add-to-list 'load-path "/Users/acid/.emacs.d/color-theme-6.6.0/")
+(require 'color-theme)
+(eval-after-load "color-theme"
+  '(progn
+     (color-theme-initialize)
+     (color-theme-hober)))
+(windmove-default-keybindings)
+(setq windmove-wrap-around t)
+(setq-default tab-width 4)
+(setq-default indent-tabs-mode nil)
+(add-hook 'before-save-hook 'whitespace-cleanup)
