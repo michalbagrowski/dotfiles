@@ -1,3 +1,7 @@
 for file in ~/.dotfiles/bash/{path,bash_prompt,exports,aliases,functions,extra,locale,completion}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
+
+if [ -d "$HOME/Projects" ]; then
+  cd ~/Projects
+fi
