@@ -1,4 +1,5 @@
 - clean: []
 - link:
     ~/.bash_profile: bash/bash_profile
+    ~/.gitconfig: git/gitconfig.symlink
 - shell: []
