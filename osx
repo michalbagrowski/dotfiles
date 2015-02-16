@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+#propt sudo pass
+
+sudo -v
+
 #inspired by https://mths.be/osx
 
 # Always show scrollbars
@@ -18,3 +22,6 @@ defaults write com.apple.LaunchServices LSQuarantine -bool false
 
 # Check for software updates daily, not just once per week
 defaults write com.apple.SoftwareUpdate ScheduleFrequency -int 1
+
+# Disable the sound effects on boot
+sudo nvram SystemAudioVolume=" "
