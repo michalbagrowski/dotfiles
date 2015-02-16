@@ -12,7 +12,7 @@
  )
 (setq require-final-newline t)
 (setq inhibit-splash-screen t)
-
+;;FIXME stupid whole pathx 
 (add-to-list 'load-path "/Users/acid/Projects/tools/magit-1.2.1/contrib/magit")
 (require 'magit)
 
@@ -28,3 +28,21 @@
 (setq-default tab-width 4)
 (setq-default indent-tabs-mode nil)
 (add-hook 'before-save-hook 'whitespace-cleanup)
+
+
+
+;;Aron
+(defun depropertize-string (str)
+  "Return a copy of STR with text properties removed."
+  (let ((str (copy-sequence str)))
+    (set-text-properties 0 (length str) nil str)
+    str))
+
+(defun insert-from-kill-ring ()
+  (interactive)
+  (insert (popup-menu* (mapcar #'depropertize-string kill-ring))))
+
+
+
+(global-set-key (kbd "C-x C-y") 'insert-from-kill-ring)
+

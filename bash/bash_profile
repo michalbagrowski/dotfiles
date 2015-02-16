@@ -1,4 +1,4 @@
-for file in ~/.dotfiles/bash/{path,bash_prompt,exports,aliases,functions,extra,locale,completion}; do
+for file in ~/.dotfiles/bash/{path,bash_prompt,exports,aliases,functions,extra,locale,completion,docker}; do
     [ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 
