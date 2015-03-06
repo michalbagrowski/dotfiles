@@ -1,1 +1,2 @@
-alias fuck='sudo $(history -p \!\!)' 
+alias fuck='sudo $(history -p \!\!)'
+alias kurwa='sudo $(history -p \!\!)'
