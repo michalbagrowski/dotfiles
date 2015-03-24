@@ -1,1 +1,10 @@
 export PATH=$PATH:~/.dotfiles/tools/aws-account-switcher
+
+
+#add aliases on my macbook
+if [ "$(uname)" == "Darwin" ]; then
+   alias git=hub
+   export PATH=$PATH:~/Projects/ops/cloudcaster
+   export PATH=$PATH:~/Projects/ops/ec2autoimage
+   export PATH=$PATH:~/Projects/ops/ec2rotatehosts
+fi
