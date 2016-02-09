@@ -12,8 +12,8 @@
  )
 (setq require-final-newline t)
 (setq inhibit-splash-screen t)
-;;FIXME stupid whole pathx 
-(add-to-list 'load-path "/Users/acid/Projects/tools/magit-1.2.1/contrib/magit")
+;;FIXME stupid whole pathx
+(add-to-list 'load-path "/Users/acid/Projects/tools/magit-1.2.1/")
 (require 'magit)
 
 
@@ -46,3 +46,6 @@
 
 (global-set-key (kbd "C-x C-y") 'insert-from-kill-ring)
 
+(global-linum-mode t)
+(require 'ido)
+(ido-mode t)
