@@ -12,12 +12,17 @@
  )
 (setq require-final-newline t)
 (setq inhibit-splash-screen t)
+
+
 ;;FIXME stupid whole pathx
-(add-to-list 'load-path "/Users/acid/Projects/tools/magit-1.2.1/")
-(require 'magit)
+;;(add-to-list 'load-path "/Users/acid/Projects/tools/magit-1.2.1/")
+;;(require 'magit)
 
+(require 'package)
+(add-to-list 'package-archives
+             '("melpa-stable" . "http://stable.melpa.org/packages/") t)
 
-(add-to-list 'load-path "/Users/acid/.emacs.d/color-theme-6.6.0/")
+(add-to-list 'load-path "~/.dotfiles/emacs/emacs.d/color-theme-6.6.0/")
 (require 'color-theme)
 (eval-after-load "color-theme"
   '(progn
