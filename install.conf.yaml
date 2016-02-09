@@ -4,5 +4,6 @@
     ~/.gitconfig: git/gitconfig.symlink
     ~/.emacs: emacs/emacs
     ~/.emacs.d: emacs/emacs.d
+    ~/.mackup: mackup/applications
     ~/.mackup.cfg: mackup/mackup.cfg
 - shell: []
