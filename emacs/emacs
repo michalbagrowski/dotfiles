@@ -54,3 +54,6 @@
 (global-linum-mode t)
 (require 'ido)
 (ido-mode t)
+
+(custom-set-variables
+ '(terraform-indent-level 4))
