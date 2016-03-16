@@ -103,13 +103,10 @@ else
     hostStyle="${yellow}";
 fi;
 
-aws_name() {
-    switch show
-}
 
 
 # Set the terminal title to the current working directory.
-PS1="AWS: \$(aws_name): \[\033]0;\w\007\]";
+PS1="AWS: \$AWS_DEFAULT_PROFILE: \[\033]0;\w\007\]";
 PS1+="\[${bold}\]"; # newline
 PS1+="\[${userStyle}\]\u"; # username
 PS1+="\[${white}\] at ";
