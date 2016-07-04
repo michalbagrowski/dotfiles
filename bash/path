@@ -1,3 +1,4 @@
+export PATH=/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/Users/acid/.dotfiles/tools/aws-account-switcher:/Users/acid/Projects/ops/cloudcaster:/Users/acid/Projects/ops/ec2autoimage:/Users/acid/Projects/ops/ec2rotatehosts
 export PATH=$PATH:~/.dotfiles/tools/aws-account-switcher
 
 
