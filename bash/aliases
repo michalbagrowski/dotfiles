@@ -3,3 +3,4 @@ alias kurwa='sudo $(history -p \!\!)'
 if [ "$(uname)" == "Darwin" ]; then
    alias git=hub
 fi
+alias psql='docker run -it --rm  postgres psql'
