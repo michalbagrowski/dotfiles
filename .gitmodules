@@ -1,6 +1,3 @@
 [submodule "dotbot"]
 	path = dotbot
 	url = https://github.com/anishathalye/dotbot
-[submodule "tools/aws-account-switcher"]
-	path = tools/aws-account-switcher
-	url = https://github.com/michalbagrowski/aws-account-switcher
