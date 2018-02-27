@@ -10,7 +10,7 @@ fi
 if [ -f '/Users/acid/Projects/google-cloud-sdk/path.bash.inc' ]; then source '/Users/acid/Projects/google-cloud-sdk/path.bash.inc'; fi
 
 logs() {
-	AWS_REGION=us-west-2 AWS_DEFAULT_PROFILE=inf awslogs get $1 ALL --no-group --no-stream --start='15m ago' --watch | jq .log
+    AWS_REGION=us-west-2 AWS_DEFAULT_PROFILE=inf awslogs get $1 ALL --no-group --no-stream --start='20m ago' --watch | jq .log
 }
 
 # The next line enables shell command completion for gcloud.
