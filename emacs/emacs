@@ -56,7 +56,7 @@
 (ido-mode t)
 
 (custom-set-variables
- '(terraform-indent-level 4))
+ '(terraform-indent-level 2))
 
 (require 'package)
 (add-to-list 'package-archives
