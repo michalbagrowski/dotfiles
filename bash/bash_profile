@@ -9,3 +9,8 @@ fi
 logs() {
     AWS_REGION=us-west-2 AWS_DEFAULT_PROFILE=inf awslogs get $1 ALL --no-group --no-stream --start='20m ago' --watch | jq .log
 }
+
+
+#export NVM_DIR="$HOME/.nvm"
+#  . "/usr/local/opt/nvm/nvm.sh"
+export KUBECONFIG=$KUBECONFIG:~/.kube/config-inf-k8s

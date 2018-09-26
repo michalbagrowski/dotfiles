@@ -1,10 +1,2 @@
-export PATH=/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/Users/acid/.dotfiles/tools/aws-account-switcher:/Users/acid/Projects/ops/cloudcaster:/Users/acid/Projects/ops/ec2autoimage:/Users/acid/Projects/ops/ec2rotatehosts
-export PATH=$PATH:~/.dotfiles/tools/aws-account-switcher
-
-
-#add aliases on my macbook
-if [ "$(uname)" == "Darwin" ]; then
-   export PATH=$PATH:~/Projects/ops/cloudcaster
-   export PATH=$PATH:~/Projects/ops/ec2autoimage
-   export PATH=$PATH:~/Projects/ops/ec2rotatehosts
-fi
+export PATH=/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/bin:/Users/acid/Library/Python/2.7/bin
+#export PYTHONPATH=/lib/python2.7/site-packages/
